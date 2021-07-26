@@ -10,18 +10,18 @@ public class IMC {
     }
 
     public String saudavel(){
-        if (resultado <= 20.7) {
-            return "Abaixo do peso";
-        } else if (resultado <= 26.4) {
-            return "Peso ideal";
-        } else if (resultado <= 27.8) {
-            return "marginalmente acima do peso";
-        } else if (resultado <= 31.1) {
-            return "acima do peso ideal";
+        if (resultado <= 19.1) {          //1
+            return "Abaixo do peso";       //2
+        } else if (resultado <= 25.8) {    //3
+            return "Peso ideal";            //4
+        } else if (resultado <= 27.3) {        //5
+            return "marginalmente acima do peso";   //6
+        } else if (resultado <= 32.3) {             //7
+            return "acima do peso ideal";           //8
         } else  {
-            return "Obeso";
+            return "Obeso";                         //9
         }
-    }
+    }                                              //10
 
     public double getAltura() {
         return altura;
